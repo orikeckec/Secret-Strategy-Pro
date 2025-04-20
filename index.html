@@ -1,80 +1,23 @@
-secret-strategy-pro/
-├── index.html
-└── assets/
-    ├── css/
-    │   └── main.css   ← copy from original template
-    ├── js/
-    │   └── main.js    ← copy from original template
-    └── images/       ← copy from original template (logo, banner, etc.)
-```
-
+---
+layout: home
+hero:
+  background: "/assets/images/hero-bg.jpg"
+title: "Welcome to Secret Strategy Pro"
 ---
 
-### 1. index.html
-```html
-<!DOCTYPE HTML>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secret Strategy Pro</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
-</head>
-<body>
+## Crypto & Stock Portfolio
 
-<!-- Header -->
-<section id="header">
-    <h1>Secret Strategy Pro</h1>
-    <p>Crypto & Stock Portfolio & Updates</p>
-    <nav>
-        <a href="#portfolio">포트폴리오</a>
-        <a href="#notice">공지사항</a>
-    </nav>
-</section>
+크립토 및 주식 전략 프로젝트와 공지사항을 한 곳에서 확인하세요.
 
-<!-- Portfolio -->
-<section id="portfolio" class="wrapper alt style2">
-    <h2>포트폴리오</h2>
-    <div class="features">
-        <article>
-            <h3>백테스팅</h3>
-            <p>나만의 거래 전략을 백테스트한 결과물</p>
-        </article>
-        <article>
-            <h3>기술적분석</h3>
-            <p>차트 지표를 활용한 기술적 분석 도구</p>
-        </article>
-        <article>
-            <h3>신호</h3>
-            <p>매수·매도 시그널 생성기</p>
-        </article>
-        <article>
-            <h3>실전매매</h3>
-            <p>실거래 매매 이력 및 성과 리포트</p>
-        </article>
-    </div>
-</section>
+{% include transitions.html %}
 
-<!-- Notice -->
-<section id="notice" class="wrapper style3">
-    <h2>공지사항</h2>
-    <ul class="actions stacked">
-        <li>2025-04-01: 사이트 오픈</li>
-        <li>2025-04-10: 백테스팅 결과 추가</li>
-    </ul>
-    <div class="sponsor">
-        <h4>후원 안내</h4>
-        <p>이 사이트가 도움이 되셨다면 비트코인으로 소소한 후원 부탁드립니다:</p>
-        <p><strong>BTC 주소:</strong> 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</p>
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=bitcoin:1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa" alt="BTC QR 코드">
-    </div>
-</section>
-
-<!-- Footer -->
-<footer id="footer">
-    <p class="copyright">Design: HTML5 UP</p>
-</footer>
-
-<script src="assets/js/main.js"></script>
-</body>
-</html>
+<div class="cards">
+  <a class="card" href="/portfolio/">
+    <h3>포트폴리오 →</h3>
+    <p>백테스팅 · 기술적분석 · 신호 · 실전매매</p>
+  </a>
+  <a class="card" href="/updates/">
+    <h3>공지사항 →</h3>
+    <p>최근 업데이트 및 후원 안내</p>
+  </a>
+</div>
